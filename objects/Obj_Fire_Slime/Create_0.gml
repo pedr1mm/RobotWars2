@@ -1,3 +1,5 @@
+//como o player, ele tem essas variáveis, para poder se mover.
+
 spd = 1;
 vspd = 0;
 hspd = 0;
