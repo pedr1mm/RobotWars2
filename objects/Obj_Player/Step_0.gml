@@ -1,13 +1,11 @@
 script_execute(estado);
 
+//aqui faço o player criar o objeto tiro cada vez que ele aperta a tecla designada
+
 #region TIRO
-
-
-
-
 if key_shoot and global.bullets > 0
 {
-	with (instance_create_layer(x, y - 15, "Shoot", Obj_Shoot))
+	with (instance_create_layer(x, y - 15, "Shoot", Obj_Shoot)) // criando o objeto tiro na localização que eu quero
 	{
 		global.bullets--;
 		
@@ -28,6 +26,8 @@ if key_shoot and global.bullets > 0
 }
 #endregion
 
+//apenas fazendo o jogo resetar se a vida acabar
+
 #region VIDA
 
 if global.life < 1
@@ -36,6 +36,8 @@ if global.life < 1
 }
 
 #endregion
+
+//fazendo cada sprite do personagem para cada direção e ação que ele realizar
 
 #region SPRITES
 
@@ -66,7 +68,7 @@ if hspd != 0{
 
 #endregion
 
-#region levando o hit
+#region //levando o hit e ativando invencibilidade 
 
 if (alarm[0] > 0)
 {
@@ -89,7 +91,7 @@ if (alarm[0] > 0)
 	
 #endregion
 	
-
+//uma tecla pra ajudar nos testes do jogo, se apertar enter o jogo reinicia
 
 if(keyboard_check_pressed(vk_enter))
 {
