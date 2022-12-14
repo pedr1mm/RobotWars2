@@ -1,3 +1,5 @@
+//mudando a imagem da barra de vida para cada hit que o personagem levar
+
 if global.life = 5 
 {
 	draw_sprite(Spr_Life,5,70,70)
