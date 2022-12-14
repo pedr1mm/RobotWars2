@@ -1,3 +1,5 @@
+//mostrando o hp do boss na cabeça dele
+
 draw_self();
 
 draw_set_valign(fa_middle);
