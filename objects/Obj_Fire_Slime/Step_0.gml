@@ -1,4 +1,4 @@
-
+//criando a colisão com um objeto específico, ou seja, ele colide com o bloco que eu quero e dá meia volta e anda até colidir com ele de novo
 
 if(place_meeting(x, y, obj_parede))
 {
